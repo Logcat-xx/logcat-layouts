@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="120dp">
+	<!-- This View acts as a background for the four TextViews -->
+	<View
+		android:id="@+id/bg_view"
+		android:layout_width="100dp"
+		android:layout_height="100dp"
+		android:layout_centerInParent="true"
+		android:background="@android:color/white" />
+
+	<!-- These four TextViews appear on top of bg_view -->
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_alignLeft="@+id/bg_view"
+		android:textColor="@android:color/black"
+		android:text="Left" />
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_alignTop="@+id/bg_view"
+		android:textColor="@android:color/black"
+		android:text="Top" />
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_alignRight="@+id/bg_view"
+		android:textColor="@android:color/black"
+		android:text="Right" />
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_alignBottom="@+id/bg_view"
+		android:textColor="@android:color/black"
+		android:text="Bottom" />
+</RelativeLayout>

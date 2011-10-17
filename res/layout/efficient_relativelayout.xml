@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<ImageView
+		android:id="@+id/icon"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/icon" />
+	<TextView
+		android:id="@+id/title"
+		android:layout_width="wrap_content"
+		android:layout_height="26dp"
+		android:layout_toRightOf="@+id/icon"
+		android:gravity="center_vertical"
+		android:textStyle="bold"
+		android:text="Title" />
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="This is some summary text"
+		android:layout_below="@+id/title"
+		android:layout_toRightOf="@+id/icon" />
+</RelativeLayout>
